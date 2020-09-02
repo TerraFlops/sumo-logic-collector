@@ -2,13 +2,17 @@
  
 ### Module name
 
-Insert module description
+Creates a Sumologic (Hosted) Collector.
 
 #### Example usage
 
 ```hcl-terraform
-module "example" {
-  source = "git::https://github.com/TerraFlops/module-name?ref=v1.0"
-  ...
+module "collector" {
+  source = "git::https://github.com/TerraFlops/sumo-logic-collector?ref=v1.0"
+  
+  name = "sumologic-collector"
+  description = "A collector for sumologic"
 }
+
 ```
+
